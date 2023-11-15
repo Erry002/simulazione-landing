@@ -300,6 +300,21 @@ footer span {
     font-size: 40px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /* Inizio about.css */
     /* Testo storia */
 .storia-about{
@@ -355,6 +370,23 @@ footer span {
 
     /* Fine about.css */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* codice per il menu ad hamburger &#9776 */
 @media only screen and (max-width: 430px){
     .menu{
@@ -382,6 +414,18 @@ footer span {
     .sotto-titolo-sec-1{
         font-size: 20px;
     }
+
+    .sect-para-about{
+        display: block;
+        width: 420px;
+        margin: 0;
+    }
+    .img-about{
+        width: 400px;
+        height: 400px;
+        margin: 0;
+    }
+    
 }
 @media only screen and (max-width: 1024px){
     .menu{
@@ -407,6 +451,22 @@ footer span {
     }
     .sotto-titolo-sec-1{
         font-size: 20px;
+    }
+
+    .storia-about{
+        text-align: center;
+        padding: 10px;
+    }
+    .sect-para-about, .set-text{
+        display: block;
+        width: 420px;
+        margin: 0 0 20px;
+    }
+    .img-about{
+        display: block;
+        width: 400px;
+        height: 400px;
+        margin: 0 0 30px;
     }
 }
             /* Fine @media query*/
