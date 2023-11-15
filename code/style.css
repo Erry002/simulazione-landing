@@ -69,7 +69,15 @@ nav .wrapper{
     color: white;
     margin: 0 15px;
 }
+        /* menu hamburger */
+.menu-burger{
+    display: none;
+    color: white;
+    font-size: 40px;
+}
+        /* fine menu amburger*/
 
+        /* jumbo per il controllo sfondo */
 .jumbo{
     background-image: url("./assets/sfondo.jpg");
     background-position: center;
@@ -117,7 +125,7 @@ a{
 a:hover{
     color: rgb(35, 176, 176);
 }
-
+                /* fin jumbo */
                 /* Sezione 1 */
 
 .volo-section{
@@ -267,4 +275,56 @@ footer span {
     font-size: 0.9em;
     color: #444;
 }
-            
+            /* Fine footer */
+
+            /* Inizio @media query*/
+
+.menu-burger{
+    display: none;
+    color: white;
+    font-size: 40px;
+}
+/* codice per il menu ad hamburger &#9776 */
+@media only screen and (max-width: 430px){
+    .menu{
+        display: none;
+    }
+    .menu-burger{
+        display: block;
+    }
+    .section-1 > .wrapper{
+        flex-direction: column-reverse;
+        border-radius: 70px;
+    }
+
+    .img{
+        width: 300px;
+        height: 300px;
+    }
+    .titolo-sec-1{
+       font-size: 35px; 
+    }
+    .sotto-titolo-sec-1{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .menu{
+        display: none;
+    }
+    .menu-burger{
+        display: block;
+    }
+    .section-1 > .wrapper, .card > .wrapper{
+        flex-direction: column-reverse;
+        border-radius: 70px;
+    }
+    .img{
+        width: 300px;
+        height: 300px;
+    }
+    .testo{
+
+    }
+}
+            /* Fine @media query*/
