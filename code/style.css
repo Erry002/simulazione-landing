@@ -168,9 +168,64 @@ a:hover{
 }
 
             /* Fine sezione 1 */
-            
+
             /* Inizio sezione 2 */
 .section-2 .wrapper{
     flex-direction: row-reverse;
 }
-            /* Fine sezione2 */
+            /* Fine sezione 2 */
+
+            /* Inizio sezione 3 */
+.card p{
+    color: rgb(0, 0, 0);
+    font-family: 'Frank Ruhl Libre';
+    font-size: 40px;
+    font-weight: 900;
+}
+/* uso qui wrapper per centrarmi le card */
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accoglienza, .destinazione, .desk{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 50px 0;
+}
+
+.accoglienza{
+    background-image: url("./assets/desk.jpg");
+    width: 350px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 200px;
+}
+
+.destinazione{
+    background-image: url("./assets/viaggiare.jpg");
+    width: 350px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 200px;
+}
+
+.desk{
+    background-image: url("./assets/help_desk.jpg");
+    width: 350px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 200px;
+}
+
+
+            /* Fine sezione 3 */
