@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header{
+    border: 2px solid black;
+}
+
+nav{
+    background-color: black;
+    border-bottom: 2px solid azure;
+}
+
+.logo{
+    width: 100px;
+    margin-top: 5px;
+    border-radius: 60px;
+}
+
+nav .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.menu{
+    text-transform: uppercase;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul li{
+    list-style: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+}
+
+.jumbo{
+    background-image: url("./assets/sfondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jumbo .cta h1{
+    font-size: 80px;
+    color: white;
+    text-align: center;
+}
+
+.jumbo .cta .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-1, .btn-2{
+    /* margin: 20 10 0 10px; */
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-1{
+    background-color: white;
+    
+}
+
+.btn-2{
+    background-color: black;
+    color: white;
+}
+
+a:hover{
+    color: rgb(35, 176, 176);
+    font-weight: 900;
+}
