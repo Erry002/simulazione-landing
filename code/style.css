@@ -22,7 +22,7 @@ body {
 
 nav {
   background-color: black;
-  border-bottom: 2px solid azure;
+
 }
 
 .lato-logo {
@@ -33,7 +33,7 @@ nav {
 }
 
 .logo {
-  width: 100px;
+  width: 50px;
   margin-top: 5px;
   border-radius: 60px;
 }
