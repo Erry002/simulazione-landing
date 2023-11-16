@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1D3557" />
+    <!-- con questa riga riesco a dare un colore alla barra di ricerca -->
+    <title>Modulo di Sondaggio</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="text-center">Contattaci</h1>
+      <form>
+        <div class="form-group debug">
+          <label class="name">Nome</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Metti il tuo nome"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="name">Cognome</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Metti il tuo Cognome"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Metti la tua mail"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <p>Messaggio</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Scrivi quello che vuoi..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />
+            Accetto la Privacy
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label>
+            <input
+              name="prefer"
+              value="grafica-usata"
+              type="checkbox"
+              class="input-checkbox"
+            />Iscriviti alla newletter
+          </label>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">INVIA</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
