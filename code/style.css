@@ -283,7 +283,6 @@ footer {
   background-color: #fabc3c;
   height: 200px;
   padding: 40px;
-  border-radius: 5px;
   flex-wrap: nowrap;
 }
 
@@ -356,25 +355,58 @@ footer span {
 /* Fine testo storia */
 
 /* Inizio file Contatti */
-.container {
+.backgroun-contattami{
+  background-color: white;
+  text-align: center;
+}
+.flex{
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
   align-items: center;
-  align-items: center;
+  text-align: center;
+}
+.container {
   background-color: #fff;
-  flex-direction: column;
-  height: 100vw;
 }
 
 .text-center {
   font-family: "Frank Ruhl Libre";
   font-size: 45px;
-  margin: 30px;
 }
 
-.form-group {
+.img-contatti{
+    height: 400px;
+    width: 400px;
+    margin: 25px;
+    border-radius: 30px;
+}
+.img-contattami{
+  padding: 0;
+  margin: 0;
+}
+
+.form-group{
+  margin: 25px;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+}
+
+.name{
+  margin-bottom: 5px;
+}
+
+.input{
+  margin-right: 15px;
+}
+
+.submit-button{
+  background-color: black;
+  color: white;
+  padding: 10px 90px;
 }
 
 /* Fine file contatti */
@@ -417,6 +449,15 @@ footer span {
     width: 400px;
     height: 400px;
     margin: 0;
+  }
+
+  .flex, .container{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .img-contatti{
+    width: 300px;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -461,6 +502,12 @@ footer span {
     width: 400px;
     height: 400px;
     margin: 0 0 30px;
+  }
+
+  .flex, .container{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
   }
 }
 /* Fine @media query*/

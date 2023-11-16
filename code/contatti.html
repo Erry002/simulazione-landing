@@ -11,81 +11,137 @@
   </head>
 
   <body>
-    <div class="container">
+    <header>
+      <nav>
+        <div class="wrapper">
+          <!-- logo -->
+          <div class="lato-logo">
+            <img class="logo" src="./assets/logo.jpg" alt="" />
+            <h1 class="nome-compagnia">Erry AirLines</h1>
+          </div>
+          <!-- menu -->
+          <div class="menu">
+            <ul>
+              <li><a href="index.html" class="link">Home</a></li>
+              <li><a href="./about.html" class="link">About</a></li>
+              <li><a href="./contatti.html" class="link">Contatti</a></li>
+            </ul>
+          </div>
+          <label class="menu-burger">&#9776</label>
+        </div>
+      </nav>
+    </header>
+    <div class="backgroun-contattami">
       <h1 class="text-center">Contattaci</h1>
+    </div>
+    <div class="container flex">
+      <div class="img-contattami ">
+        <img class="img-contatti" src="./assets/contact.jpg" alt="">
+      </div>
       <form>
-        <div class="form-group debug">
-          <label class="name">Nome</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            class="form-control"
-            placeholder="Metti il tuo nome"
-            required
-          />
-        </div>
+        <div class="box-form">
+            <div class="form-group">
+              <label class="name">Nome</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Metti il tuo nome"
+                required
+              />
+            </div>
 
-        <div class="form-group">
-          <label class="name">Cognome</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            class="form-control"
-            placeholder="Metti il tuo Cognome"
-            required
-          />
-        </div>
+            <div class="form-group">
+              <label class="name">Cognome</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Metti il tuo Cognome"
+                required
+              />
+            </div>
 
-        <div class="form-group">
-          <label class="email-label" for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="form-control"
-            placeholder="Metti la tua mail"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <p>Messaggio</p>
-          <textarea
-            id="comments"
-            class="input-textarea"
-            name="comment"
-            placeholder="Scrivi quello che vuoi..."
-          ></textarea>
-        </div>
+            <div class="form-group">
+              <label class="name" for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Metti la tua mail"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <p class="name">Messaggio</p>
+              <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                rows="7" cols="20"
+                placeholder="Scrivi quello che vuoi..."
+              ></textarea>
+            </div>
 
-        <div class="form-group">
-          <label>
-            <input
-              name="user-recommend"
-              value="definitely"
-              type="radio"
-              class="input-radio"
-              checked
-            />
-            Accetto la Privacy
-          </label>
-        </div>
+            <div class="form-group">
+              <label>
+                <input
+                  name="user-recommend"
+                  value="definitely"
+                  type="radio"
+                  class="input-radio name input"
+                  checked
+                />
+                Accetto la Privacy
+              </label>
+            </div>
 
-        <div class="form-group">
-          <label>
-            <input
-              name="prefer"
-              value="grafica-usata"
-              type="checkbox"
-              class="input-checkbox"
-            />Iscriviti alla newletter
-          </label>
-        </div>
-        <div class="form-group">
-          <button type="submit" id="submit" class="submit-button">INVIA</button>
-        </div>
+            <div class="form-group">
+              <label>
+                <input
+                  name="prefer"
+                  value="input-newletter"
+                  type="checkbox"
+                  class="input-checkbox name input"
+                />Iscriviti alla newletter
+              </label>
+            </div>
+            <div class="form-group">
+              <button type="submit" id="submit" class="submit-button name">INVIA</button>
+            </div>
+          </div>
       </form>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- footer logo -->
+      <div class="footer-logo">
+        <img class="logo" src="./assets/logo.jpg" alt="" />
+        <h1 class="nome-compagnia">Erry AirLines</h1>
+      </div>
+      <!-- colonna pagine -->
+      <div class="pagine">
+        <p>Pagine</p>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <!-- colonna pagine -->
+      <div class="link">
+        <p>Link</p>
+        <ul>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <span>Copyright 2023, Erry AirLines S.P.A.</span>
+    </footer>
   </body>
 </html>
