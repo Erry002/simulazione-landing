@@ -1,0 +1,58 @@
+
+.menu-burger {
+    display: none;
+    color: white;
+    font-size: 40px;
+  }
+  
+  /* Inizio about.css */
+  /* Testo storia */
+  .storia-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .sect-titolo-about {
+    margin: 30px 0;
+  }
+  
+  .titolo-about {
+    color: white;
+    font-family: "Frank Ruhl Libre";
+    font-size: 60px;
+    font-weight: 900;
+  }
+  
+  .sect-sotto-titolo-about {
+    margin: 0 0 40px;
+  }
+  
+  .sotto-titolo-about {
+    color: white;
+    font-family: "Frank Ruhl Libre";
+  }
+  
+  .sect-para-about {
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img-about {
+    width: 500px;
+    border-radius: 20px;
+  }
+  
+  .set-text {
+    width: 500px;
+    margin: 10px 40px 50px;
+  }
+  
+  .para-about {
+    color: white;
+    font-family: "Frank Ruhl Libre";
+    font-size: 20px;
+  }

@@ -1,0 +1,53 @@
+.backgroun-contattami{
+    background-color: white;
+    text-align: center;
+  }
+  .flex{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .container {
+    background-color: #fff;
+  }
+  
+  .text-center {
+    font-family: "Frank Ruhl Libre";
+    font-size: 45px;
+  }
+  
+  .img-contatti{
+      height: 400px;
+      width: 400px;
+      margin: 25px;
+      border-radius: 30px;
+  }
+  .img-contattami{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .form-group{
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+  }
+  
+  .name{
+    margin-bottom: 5px;
+  }
+  
+  .input{
+    margin-right: 15px;
+  }
+  
+  .submit-button{
+    background-color: black;
+    color: white;
+    padding: 10px 90px;
+  }
