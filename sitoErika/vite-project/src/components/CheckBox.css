@@ -1,0 +1,12 @@
+.custom-checkbox {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: #EE2C3C; /* Colore per il checkbox selezionato */
+    border: 2px solid slategrey; /* Colore del bordo per il checkbox selezionato */
+  }
+  
+  .custom-checkbox:checked {
+    background-color: grey; /* Colore per il checkbox non selezionato */
+    border: 2px solid black; /* Colore del bordo per il checkbox non selezionato */
+  }
+  
