@@ -44,7 +44,7 @@ export default function Project() {
     <div className="flex flex-col min-h-screen bg-slate-100 font-alata">
       <MouseClickLogger setShowRecensione={setShowRecensione} />
       {/* Aggiungi il logger di click del mouse */}
-      <div className="flex justify-center items-center bg-[#EE2C3C] sm:w-full p-3 text-slate-100 text-2xl">
+      <div className="flex justify-center items-center bg-[#EE2C3C] p-3 text-slate-100 text-2xl">
         <h2>RECENSIONI</h2>
       </div>
       <div className=" flex sm:justify-center sm:items-center">
@@ -56,7 +56,7 @@ export default function Project() {
           università italiane pubbliche e private.
         </p>
       </div>
-      <div className="relative mb-[650px] mt-[50px] sm:left-[35%]">
+      <div className="relative mb-[650px] mt-[50px] sm:ml-[500px]">
         <img
           src={italia}
           alt="mappa_dell_italia"

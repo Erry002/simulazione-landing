@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com';
 import { useIsMobile } from "../components/responsiveUtils.js";
 
 import TextBox from "../components/TextBox.jsx";
-import TextArea from "../components/TextArea.jsx";
+// import TextArea from "../components/TextArea.jsx";
 import CheckBox from "../components/CheckBox.jsx";
 
 import contact from "../assets/contact_us.png";
@@ -19,7 +19,7 @@ function EmailRestAPI() {
   const [email, setEmail] = useState("");
   const [nomLaurea, setNomLaurea] = useState("");
   const [nomCitta, setNomCitta] = useState("");
-  const [message, setMessage] = useState("");
+  // const [message, setMessage] = useState("");
   const [isChecked, setIsChecked] = useState(false);
 
   const handleCheckboxChange = () => {

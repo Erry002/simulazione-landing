@@ -4,7 +4,7 @@ import rosso from "../assets/rosso_1.png";
 
 // import per contatti
 import TextBox from "../components/TextBox.jsx";
-import TextArea from "../components/TextArea.jsx";
+// import TextArea from "../components/TextArea.jsx";
 import CheckBox from "../components/CheckBox.jsx";
 
 import contact from "../assets/contact_us.png";
@@ -25,21 +25,9 @@ export default function Home() {
   const [email, setEmail] = useState("");
   const [nomLaurea, setNomLaurea] = useState("");
   const [nomCitta, setNomCitta] = useState("");
-  const [message, setMessage] = useState("");
+  // const [message, setMessage] = useState("");
   const [isChecked, setIsChecked] = useState(false);
 
-  //variabile per mostrare una foto in phoneMode e un'altra per la desktopMode [inizio riga 28, fine riga 39]
-  // const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setIsMobile(window.innerWidth < 768);
-  //   };
-  //   window.addEventListener("resize", handleResize);
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
 
   // fine script logico per controllare quale immagine deve essere visualizzata
 
@@ -50,6 +38,12 @@ export default function Home() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Validazione del form
+    if (!name || !cognome || !email || !nomCitta || !nomLaurea || !isChecked) {
+      alert("Per favore compila tutti i campi.");
+      return;
+    }
+
     if (!isChecked) {
       alert('Devi accettare i termini e le condizioni')
       return;
@@ -59,17 +53,6 @@ export default function Home() {
     const serviceId = "service_hozzjlm";
     const templateId = "template_u42rl68";
     const publicKey = "vjw7dcQJizcn3ce0Z";
-
-    // const data = {
-    //   service_id: serviceId,
-    //   template_id: templateId,
-    //   user_id: publicKey,
-    //   template_params: {
-    //     from_name: name,
-    //     from_email: email,
-    //     to_name: "Enrico",
-    //     message: message,
-    //   }
 
     const templateParams = {
       name,
